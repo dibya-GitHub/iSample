@@ -12,7 +12,9 @@ export class AppComponent {
     { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
     { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Login', url: '/shared/Login', icon: 'login' },
+    { title: 'Signup', url: '/shared/Signup', icon: 'signup' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public labels = ['Family'];
   constructor() {}
 }
