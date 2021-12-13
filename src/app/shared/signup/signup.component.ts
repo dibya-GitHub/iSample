@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoaderService } from '../loading/loading.service';
 
 @Component({
   selector: 'app-signup',
@@ -6,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.scss'],
 })
 export class SignupComponent implements OnInit {
+  constructor(private ionLoader: LoaderService) {}
 
-  constructor() { }
-
-  ngOnInit() {}
-
+  ngOnInit() {
+    this.ionLoader.showHideAutoLoader();
+  }
 }
