@@ -7,9 +7,11 @@ import { LoginComponent } from './login/login.component';
 import { SharedPageRoutingModule } from './shared-routing.module';
 import { SharedPage } from './shared.page';
 import { SignupComponent } from './signup/signup.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { WelcomeScreenComponent } from './welcome-screen/welcome-screen.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, SharedPageRoutingModule],
-  declarations: [SharedPage, LoginComponent, SignupComponent, LoadingComponent],
+  declarations: [SharedPage, LoginComponent, SignupComponent, LoadingComponent, ForgotPasswordComponent, WelcomeScreenComponent],
 })
 export class SharedPageModule {}

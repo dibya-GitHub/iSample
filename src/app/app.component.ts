@@ -7,6 +7,7 @@ import { LoaderService } from './shared/loading/loading.service';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'Welcome', url: '/shared/welcome', icon: 'mail' },
     { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
     { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
     { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },

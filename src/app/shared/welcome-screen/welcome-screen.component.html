@@ -1,0 +1,29 @@
+<ion-content fullscreen scroll-y="false">
+  <ion-slides pager="true" [options]="slideOpts" #picSlider (ionSlideDidChange)="onSlideMoved($event)">
+    <ion-slide>
+      <div class="slider1">
+        <!-- <ion-icon class="icon" name="create"></ion-icon> -->
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slider2">
+        <!-- <ion-icon class="icon" name="lock"></ion-icon> -->
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slider3">
+        <!-- <ion-icon class="icon" name="color-fill"></ion-icon> -->
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slider4">
+        <!-- <ion-icon class="icon" name="copy"></ion-icon> -->
+        <!-- <img [src]="slider" /> -->
+        <h4>Ready to Play ?</h4>
+        <ion-button fill="clear" [routerLink]="['/shared/Login']">Continue <ion-icon slot="end" name="arrow-forward">
+          </ion-icon>
+        </ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
